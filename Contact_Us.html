@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Con.css">
+    
+</head>
+<body>
+    <div id="nav">
+        <img src="uni_logo1.png">
+        <a href="Home page.html">Home</a>
+        <a href="abo.html">About us</a> 
+        <a href="Events.html">Events</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="con.html" style=" color: black; font-weight: bolder;">Contact us</a>   
+    </div>
+<div  id="c1">
+    <div id="c2">
+        <div id="c3">
+         <p id="c4">CONTACT US</p>  
+        </div>
+        <div id="c6">
+        <div id="c7">
+            <h4>First Name</h4>
+            <input class="c9" placeholder=" ">
+        </div>
+        <div id="c8">
+            <h4>Last Name</h4>
+            <input class="c9" placeholder="">
+        </div>
+    </div>
+    <div id="c10">
+        <h4>Email ID</h4>
+        <input id="c11" placeholder="">
+    </div>
+    <div id="c12">
+        <h4 id="c13">Comments</h4>
+        <textarea id="c14" name="w3review" rows="4" cols="50"></textarea>
+    </div>
+    <div id="c15">
+        <button type="submit"id="c16" onclick="openPopup()" >Submit</button>
+        <div class="popup" id="popup">
+            <img src="https://cdn.vectorstock.com/i/preview-1x/05/88/tick-icon-vector-14450588.jpg">
+            <h2>Thank You for contacting us.</h2>
+            <p>We'll get back to you very soon</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>  
+    </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup()
+        {
+            popup.classList.add("open-popup");
+        }
+        function closePopup()
+        {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
